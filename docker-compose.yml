@@ -1,8 +1,11 @@
 version: "3"
 services:
-  web:
-    image: nginx:latest
-    container_name: web
+  github-actions-web:
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    image: github-actions-web
+    container_name: github-actions-web
     ports:
       - "80:80"
     volumes:
