@@ -1,0 +1,28 @@
+{
+  "family": "github-actions-web",
+  "executionRoleArn": "arn:aws:iam::016992890397:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "image": "",
+      "name": "github-actions-web",
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "protocol": "tcp",
+          "containerPort": 80
+        }
+      ]
+    }
+  ],
+  "taskRoleArn": "arn:aws:iam::016992890397:role/github-actions-web",
+  "compatibilities": [
+    "EC2",
+    "FARGATE"
+  ],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc",
+  "memory": "512",
+  "cpu": "256"
+}
