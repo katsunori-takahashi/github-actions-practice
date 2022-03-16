@@ -1,6 +1,6 @@
 {
   "family": "github-actions-web",
-  "executionRoleArn": "arn:aws:iam::016992890397:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::397509685604:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "image": "",
@@ -14,7 +14,7 @@
       ]
     }
   ],
-  "taskRoleArn": "arn:aws:iam::016992890397:role/github-actions-web",
+  "taskRoleArn": "arn:aws:iam::397509685604:role/github-actions-web",
   "compatibilities": [
     "EC2",
     "FARGATE"
